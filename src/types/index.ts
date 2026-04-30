@@ -1,11 +1,10 @@
-          
-          export interface User {
+export interface User {
   id: string;
   github_id: string;
   username: string;
   email: string;
   avatar_url: string;
-  role: 'ADMIN' | 'ANALYST';
+  role: "ADMIN" | "ANALYST";
   is_active: boolean;
   last_login_at: string;
   created_at: string;
@@ -45,14 +44,12 @@ export interface TokenResponse {
 }
 
 export interface ErrorResponse {
-  status: 'error';
+  status: "error";
   message: string;
 }
 
 export interface AuthState {
   user: User | null;
-  accessToken: string | null;
-  refreshToken: string | null;
   isAuthenticated: boolean;
   isLoading: boolean;
 }
@@ -66,7 +63,7 @@ export interface Filters {
   min_country_probability?: number;
   min_gender_probability?: number;
   sort_by?: string;
-  order?: 'asc' | 'desc';
+  order?: "asc" | "desc";
   page?: number;
   limit?: number;
 }
