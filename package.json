@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Insighta Labs+ Web Portal - Static HTML",
   "scripts": {
-    "build": "mkdir -p dist && cp index.html dist/index.html",
+    "build": "mkdir -p dist && cp index.html dist/index.html && cp public/_redirects dist/_redirects",
     "start": "npx serve dist"
   },
   "keywords": [],
